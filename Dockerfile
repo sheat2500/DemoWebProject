@@ -40,4 +40,4 @@ CMD ["catalina.sh", "run"]
 RUN mkdir /usr/local/tomcat/webapps/demo
 RUN mkdir /usr/local/tomcat/webapps/demowebproject
 RUN wget http://www.baidu.com -P /usr/local/tomcat/webapps/demo
-COPY DemoWebProject /usr/local/tomcat/webapps/demowebproject
+COPY demowebproject /usr/local/tomcat/webapps/demowebproject
