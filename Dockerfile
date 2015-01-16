@@ -38,9 +38,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
 RUN mkdir /usr/local/tomcat/webapps/demo
-RUN mkdir /usr/local/tomcat/webapps/demowebproject
 
 # Download index.html to /usr/local/tomcat/webapps/demo
 # wget utility is the best option to download files from internet
-RUN wget http://www.baidu.com -P /usr/local/tomcat/webapps/demo
-COPY demowebproject /usr/local/tomcat/webapps/demowebproject
+RUN wget https://docs.google.com/uc?export=download&id=0B2C0S68UlH8vcFJtcjdZengwcTA -P /usr/local/tomcat/webapps/demo
