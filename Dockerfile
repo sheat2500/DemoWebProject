@@ -35,6 +35,7 @@ RUN curl -SL "$TOMCAT_TGZ_URL" -o tomcat.tar.gz \
 
 EXPOSE 8080
 
+# Add Project war file to tomcat work directory
 ADD DemoWebProject.war /usr/local/tomcat/webapps/
 
 CMD ["catalina.sh", "run"]
